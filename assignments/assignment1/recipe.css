@@ -1,0 +1,70 @@
+body {
+    background: #FFFFFF;
+    color: #404040;
+    font-family: Georgia, Garamond, sans-serif;
+    font-size: 11pt;
+}
+
+section {
+    margin: 0 0;
+    padding: 0 0 10pt 0;
+    border-bottom: 1px solid red;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+    color: #A4A400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: #f0f0f0;
+    color: #A4A400;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18pt;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+span.lead {
+    font-weight: bold;
+}
+
+pre {
+    white-space: pre-line;
+    text-align: right;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+blockquote {
+    background-color: #FFFFa8;
+}
