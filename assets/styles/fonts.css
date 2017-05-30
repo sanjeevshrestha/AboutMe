@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Devanagari-New-Normal';
+    src:url('../fonts/Devanagari-New-Normal.ttf.woff') format('woff'),
+        url('../fonts/Devanagari-New-Normal.ttf.svg#Devanagari-New-Normal') format('svg'),
+        url('../fonts/Devanagari-New-Normal.ttf.eot'),
+        url('../fonts/Devanagari-New-Normal.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}

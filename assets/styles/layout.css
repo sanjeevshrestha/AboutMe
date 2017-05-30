@@ -19,7 +19,5 @@ display:block;
 @media screen and (min-width: 47.5em ) {
   .rightColumn { margin-left: 19.5em; }
 	.leftColumn { position: absolute; top: 0; left: 0; width: 18.75em; }
-  .columnsContainer{
-    min-height: 540px;
-  }
+
 }

@@ -1,41 +1,228 @@
-body{
-
-  background-color: #f9f9f9;
-  font-family:'Crimson Text', serif;
+body {
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    line-height: 20pt;
+    letter-spacing: 1px;
 }
 
-.leftColumn{
+a,
+a:active,
+a:link {
+    color: #059;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1em;
+}
 
-}
-.leftColumn .lead-image{
-  text-align: center;
-}
-.leftColumn .lead-image img{
-  width:98%;
+a:hover {
+    text-decoration: underline;
 }
 
-.rightColumn{
-
+a:visited {
+    color: #023;
 }
+
+.leftColumn .lead-image {
+    text-align: center;
+}
+
+.leftColumn .lead-image img {
+    width: 98%;
+}
+
+.leftColumn .lead-links {
+    margin: 0 0;
+    padding: 1em 1.5em;
+}
+
+.leftColumn .lead-links ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.leftColumn .lead-links ul li {
+    list-style-position: outside;
+    list-style: none;
+    margin: 0.2em 0;
+    padding: 0.2em 0.6em;
+    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+.leftColumn .lead-links ul li:hover {
+    background-color: #eee;
+}
+
+.leftColumn .validate {
+    padding: 1em 1.5em;
+}
+
 .rightColumn .intro {
-font-family: 'Lobster', cursive;
-color:#333;
-font-size:14px;
-letter-spacing: 2xpx;
-font-weight: normal;
-
-}
-.rightColumn .intro .lead {
-
-font-size:24px;
-font-weight: bold;
-
+    font-family: 'Indie Flower', cursive;
+    color: #333;
+    letter-spacing: 2xpx;
+    font-weight: normal;
 }
 
-@media screen and (min-width: 47.5em ) {
-  .rightColumn { margin-left: 19.5em; }
-	.leftColumn { position: absolute; top: 0; left: 0; width: 18.75em; }
-  .leftColumn .lead-image img{
-    width:210px;
-  }
+.rightColumn .intro h2 {
+    font-weight: bold;
+    line-height: 45px;
+    font-size: 2.5em;
+}
+
+.rightColumn .intro h3 {
+    font-size: 1.4em;
+}
+
+.rightColumn section.assignment-section {
+    margin: 4em;
+}
+
+.rightColumn section.assignment-section h2 {
+    margin: 0 0 0.5em 0;
+}
+
+.rightColumn section.assignment-section ul {
+    margin: 0 0;
+    padding: 0 0;
+    list-style: square;
+    list-style-position: inside;
+}
+
+.rightColumn section.assignment-section ul>li {
+    position: relative;
+    margin: 0.1em;
+}
+
+.rightColumn section.assignment-section ul>li a {
+    position: relative;
+    left: -1.2em;
+}
+
+footer .validate {
+    display: block;
+}
+
+.leftColumn .validate {
+    display: none;
+}
+
+.quotes blockquote {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.quotes .quoter {
+    font-size: 0.5em;
+    float: right;
+}
+
+.quotes blockquote.devanagari {
+    font-family: 'Devanagari-New-Normal';
+}
+
+.favorites ul {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.favorites ul li {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    padding: 0;
+    margin: 0.5em 0.5em;
+    overflow: hidden;
+}
+
+.favorites ul li .card {
+    width: 300px;
+}
+
+.favorites ul li .card h4 {
+    margin: 0 0 0.2em 0;
+    font-weight: bold;
+}
+
+.favorites ul li .card img {
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.moods {
+    background-image: url("../images/rudra1.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    height: 40%;
+    min-height: 250px;
+    padding: 3.5em;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 1px 2px 3px #ccc;
+}
+
+@media screen and (min-width: 47.5em) {
+    .rightColumn {
+        margin-left: 19.5em;
+    }
+    .leftColumn {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 18.75em;
+        border-right: 1px solid #f9f9f9;
+    }
+    .leftColumn .lead-image img {
+        width: 210px;
+    }
+    .rightColumn {
+        border-left: 1px solid #ddd;
+        min-height: 545px;
+    }
+    footer .validate {
+        display: none;
+    }
+    .leftColumn .validate {
+        display: block;
+    }
+    .leftColumn .lead-links {
+        margin: 0 0;
+        padding: 1em 1.5em;
+    }
+    .leftColumn .lead-links ul {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .leftColumn .lead-links ul li {
+        list-style-position: outside;
+        list-style: none;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        display: block;
+        border-radius: 0;
+        border: none;
+    }
+    .leftColumn .lead-links ul li:hover {
+        background: none;
+    }
+    section {
+        margin: 2em 0;
+    }
 }
