@@ -8,7 +8,7 @@ body {
 section {
     margin: 0 0;
     padding: 0 0 10pt 0;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid #dedede;
 }
 
 section:last-child {
@@ -32,6 +32,13 @@ h6 {
     color: #A4A400;
     font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
     text-decoration: underline;
+    letter-spacing: 0.25em;
+    display: inline-block;
+}
+
+.heading {
+    text-align: center;
+    width: 100%;
 }
 
 h1 {
@@ -57,7 +64,6 @@ span.lead {
 pre {
     white-space: pre-line;
     text-align: right;
-    float: left;
 }
 
 .clear {
@@ -66,4 +72,10 @@ pre {
 
 blockquote {
     background-color: #FFFFa8;
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+    list-style-image: url("./images/pie_icon.gif");
 }
