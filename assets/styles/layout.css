@@ -1,0 +1,25 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body { margin: 0; }
+
+.columnsContainer, footer, header { position: relative; margin: .5em; }
+
+.leftColumn, .rightColumn, footer, header { padding: 1.25em; }
+
+.rightColumn { margin-bottom: .5em; }
+footer{
+  clear:both;
+}
+
+.columnsContainer{
+display:block;
+}
+@media screen and (min-width: 47.5em ) {
+  .rightColumn { margin-left: 19.5em; }
+	.leftColumn { position: absolute; top: 0; left: 0; width: 18.75em; }
+  .columnsContainer{
+    min-height: 540px;
+  }
+}

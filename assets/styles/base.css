@@ -1,0 +1,41 @@
+body{
+
+  background-color: #f9f9f9;
+  font-family:'Crimson Text', serif;
+}
+
+.leftColumn{
+
+}
+.leftColumn .lead-image{
+  text-align: center;
+}
+.leftColumn .lead-image img{
+  width:98%;
+}
+
+.rightColumn{
+
+}
+.rightColumn .intro {
+font-family: 'Lobster', cursive;
+color:#333;
+font-size:14px;
+letter-spacing: 2xpx;
+font-weight: normal;
+
+}
+.rightColumn .intro .lead {
+
+font-size:24px;
+font-weight: bold;
+
+}
+
+@media screen and (min-width: 47.5em ) {
+  .rightColumn { margin-left: 19.5em; }
+	.leftColumn { position: absolute; top: 0; left: 0; width: 18.75em; }
+  .leftColumn .lead-image img{
+    width:210px;
+  }
+}
