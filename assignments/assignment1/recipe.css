@@ -1,8 +1,8 @@
 body {
-    background: #FFFFFF;
     color: #404040;
     font-family: Georgia, Garamond, sans-serif;
     font-size: 11pt;
+    background-image: url("./images/silverware.jpg");
 }
 
 section {
@@ -48,7 +48,6 @@ h2 {
 
 .container {
     margin: 0 auto;
-    background-color: #ffffff;
 }
 
 span.lead {
