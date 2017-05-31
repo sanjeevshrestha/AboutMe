@@ -79,3 +79,6 @@ ul {
     list-style: none;
     list-style-image: url("./images/pie_icon.gif");
 }
+li{
+    margin:6pt 0pt;
+}

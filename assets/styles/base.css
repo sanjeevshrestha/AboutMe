@@ -78,7 +78,7 @@ a:visited {
 }
 
 .rightColumn section.assignment-section {
-    margin: 4em;
+    margin: 4em 1em;
 }
 
 .rightColumn section.assignment-section h2 {
@@ -178,9 +178,7 @@ footer .validate {
     text-shadow: 1px 2px 3px #ccc;
 }
 
-.about-friend{
 
-}
 .about-friend::first-letter{
   font-weight: bold;
   font-size:1.5em;
