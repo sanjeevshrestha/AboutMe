@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+fieldset {
+    border: 1px solid #e0e0e0;
+    background-color: #f5f5f5;
+}
+
+fieldset legend {
+    padding: 0;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input-row {
+    display: block;
+    padding: 5px;
+}
+
+.input-row label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.input-row input {
+    border: 1px solid #cdcdcd;
+    width: 97%;
+    display: block;
+    height: 30px;
+    font-size: 12pt;
+    padding:5px;
+}
+
+.input-row select {
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    height: 30px;
+    font-size: 12pt;
+}
+
+.input-row-checkbox {
+    display: block;
+    padding: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.input-row-checkbox label {
+    float: right;
+    width: 330px;
+    font-weight: normal;
+}
+
+.input-row-checkbox input[type="checkbox"] {
+    float: left;
+    width: 20px;
+}
+
+.radio-boxes .radio-row {
+    display: block;
+    overflow: hidden;
+}
+
+.radio-boxes label {
+    float: right;
+    width: 330px;
+    font-weight: normal;
+}
+
+.radio-boxes input[type="radio"] {
+    float: left;
+    width: 20px;
+    height:20px;
+    vertical-align: middle;
+}
+
+.submit-row {
+    width: 100%;
+    margin: 20px 0;
+    clear: both;
+}
+
+.submit-row input {
+    border: 1px solid #cdcdcd;
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 12pt;
+}
