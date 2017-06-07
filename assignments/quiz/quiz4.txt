@@ -1,0 +1,31 @@
+JSP Custom Tags Quiz
+1. Rewrite the JSP page in the first demo (forEach) to use scripting instead of the JSTL
+-- 
+ <table>
+ <%
+    List<Student> students = (List) request.getAttribute("students"); 
+    Iterator it =  students.getIterator();
+    while(it.hasNext())
+    {
+        Student student = it.next();
+        out.print("<tr><td>"+student.name+"</td><td>"+student.age+"</td></tr>");
+    }
+ %>
+ </table>
+
+2. How do custom tags relate to JSTL?
+- The JSTL provides most common tags that can be used in jsp page. Custom tags can be defined similar to JSTL to meet custom needs of the application.
+3. What is the role of the URI in the TLD and the taglib directive?
+- The URI attribute defines the url where the tags are located. The tab lib will try to find the tags declaration in the url. 
+4. What is a tag handler class?
+- Tag handler class is a class that is bound to the tag and handles the tag display and behavior. 
+5. What is the role of attribute setters in a tag handler class?
+- the attribute setter allows the tag to set the value of private variable in the tag handler class. The tag lib will try to find a setter for the attribute name in the tag handler. 
+6. What is the role of the doTag() method in a tag handler class?
+-  This method is called when the tag is rendered and allows to write html outputs. 
+7. What does the operation getJspContext().getOut().write(“Hi Bob”) do when called in
+a doTag() method?
+- This method will get the current Output Writer from the current context and writes "Hi Bob";
+8. What does the operation getJspBody().invoke(null) do when called in a doTag()
+method? 
+- When this is called in the doTag method, It will pass the output resulting from the execution of current JSP tag body to the client, not the jsp. 

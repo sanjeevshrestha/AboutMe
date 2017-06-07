@@ -1,0 +1,18 @@
+1. What is the difference between a web server and a web container?
+- Web Server is a server that takes in http request and responds with http response. Web server can respond with static resources like stylesheets, texts, images and static html files. The main purpose of web server is to respond with http response. The Web container in other hand is needed to run a servlet that adds dynamism to http response. These containers manage the lifecycle of servlets and also manages which servlet to invoke on user requests. The container provide lot of resources for servlets to run. 
+2. What is a servlet?
+- Servlet are small Java applications that run on servlet container like Apache Tomcat, Jetyy, Glassfish etc. These application enhances the services provided by web server and responds to user requests. These servlets add dynamism to the response and can perform complex computations and apply business logic to request inputs.
+3. How do web servers and web containers interact with servlets?
+- The request is initially handled by Web Server. The Web Server then gathers required static resources like images, css, static text and html files. When the web server gets a request that has to be handled by servlet it sends the request to web container of the application server (or just container). The web container in turn checks if the servlet is already loaded or not. If the servlet is not loaded, it will load the servlet and creates a new thread to handle the request and calls the  service methods of the servlet in the loaded container. The container creates request, response object and passes to the servlet to work. The servlet in turn handes the request and generates the output that is written to response object. This response object is then return by container to to web server which then responds to client that made request. 
+4. Who creates request objects?
+- The container creates requests and response objects and passes it to servlet. The request object has all the context and data from client request. 
+5. What are the states in the servlet lifecycle?
+-  Servlet has following Lifecycles - Load, Create Instance, Init, Service, Destroy. The servlet is created only once but can handle multiple requests in multiple threads.
+6. Who calls init and when?
+- The web container calls the init method only once after creating the servlet instance. The init method is used to initialize the servlet.  
+7. Which of init, service, and doGet should you override?
+- doGet for GET Method
+8. In what sense are servlets multi-threaded?
+- A container can receive multiple requests and it will create a new thread for each request and make a call to servlet methods as required. These makes the servlet handle multiple request in multiple threads
+9. What are the implications of this for servlet instance variables? 
+- The instance variables are accessible to all the threads that is making calling methods in servlet. This makes synchronization on shared variables complicated as there can be multiple thread accessing the same shared instance variable.

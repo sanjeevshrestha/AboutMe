@@ -7,6 +7,10 @@
 <p>
     Welcome to Nerd Luv, <?php echo $_POST["name"] ;?>
 </p>
+<p>
+        Now <a href="login.php">login to see your matches!</a>
+
+</p>
 
 	</div>
 

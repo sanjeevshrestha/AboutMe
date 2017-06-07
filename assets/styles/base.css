@@ -85,23 +85,24 @@ a:visited {
     margin: 0 0 0.5em 0;
 }
 
-.rightColumn section.assignment-section ul {
+.rightColumn  ul.pagelinks {
     margin: 0 0;
     padding: 0 0;
     list-style: square;
     list-style-position: inside;
 }
 
-.rightColumn section.assignment-section ul>li {
+.rightColumn ul.pagelinks>li {
     position: relative;
     margin: 0.1em;
 }
 
-.rightColumn section.assignment-section ul>li a {
+.rightColumn ul.pagelinks>li a {
     position: relative;
-    left: -1.2em;
 }
-
+.rightColumn ul.pagelinks>li a+a {
+    color:#900;
+}
 footer .validate {
     display: block;
 }
@@ -234,7 +235,7 @@ footer .validate {
         margin: 2em 0;
     }
     .rightColumn section.assignment-section {
-    margin: 4em 2em;
+    margin: 4em 0em;
 }
 
 }

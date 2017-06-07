@@ -1,0 +1,22 @@
+JSP Introduction Quiz
+1. What is the main value of Java Server Pages?
+- JSP are uses so that we don't have to write to out stream. This means we can write pure html tags in a file and this will be transpiled to statements writing to out streams. 
+2. How are JSP pages related to servlets?
+- JSP is transpiled to Servlet Java Code which in turn in converted to java servlet and run in container. 
+3. How are JSP pages related to HTML?
+- JSP can have html parts in the JSP page and it can be mixed with java code using expression languages, directives and tags. 
+4. Give an example of a JSP scriptlet and show how it will look in the JSP servlet .
+- <% List styles =  request.getAttribute("styles") %>
+    
+5. Give an example of a JSP declaration and show how it will look in the JSP servlet.
+- <%! User u = new User();%>
+- <%! int count = 0;%>
+6. Give an example of a JSP comment and show how it will look in the JSP servlet.
+- <%-- This is a comment --%> 
+7. Give an example of a JSP expression and show how it will look in the JSP servlet.
+ - <p>My name is ${user.name} 
+8. Give an example of a JSP directive and show how it will look in the JSP servlet.
+- <%@ page import ="java.util.*" />
+9. Explain how an EL expression is evaluated.
+10. Explain how servlet attributes are involved in EL expressions.
+11. Explain how servlets and JSPs use request dispatch to interact. 
