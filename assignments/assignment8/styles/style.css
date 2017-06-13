@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.banking-stage {
+    background-color: #f0f0f0;
+    border: 1pt solid #ddd;
+    color: black;
+    padding: 10pt;
+}
+
+.banking-stage h1 {
+    margin: 0px;
+    text-align: center;
+}
+
+.row {
+    margin: 10pt 0;
+}
+
+.row label {
+    width: 130px;
+    padding: 5pt 0pt;
+    display: block;
+    font-weight: bold;
+}
+
+.row input[type="text"] {
+    font-size: 12pt;
+    border: 1pt solid #ddd;
+    display: block;
+    padding: 5pt;
+    width: 97%;
+}
+
+.row input[type="button"] {
+    font-size: 12pt;
+    border: 1pt solid #aaa;
+    padding: 5pt;
+    background-color: #e0e0e0;
+}
+
+.row textarea#accList {
+    font-family: monospace;
+    width: 97%;
+    border: 1pt solid #ddd;
+}

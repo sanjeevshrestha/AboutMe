@@ -1,0 +1,56 @@
+body {
+    background-color: #CCCCFF;
+    font-size: 14pt;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container h1 {
+    font-weight: bold;
+    font-size: 32pt;
+    margin: 0px;
+    text-align: center;
+}
+
+.animator-stage {
+    text-align: center;
+}
+
+.txtStage {
+    margin: 0 auto;
+    width: 99%;
+    height: 400px;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
+div.controls {
+    width: auto;
+    margin: 0 auto;
+}
+
+input[type="button"],
+select {
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: sans-serif;
+    border:0px;
+}
+
+fieldset.control {
+    border: 5px solid black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.validate {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 88px;
+}

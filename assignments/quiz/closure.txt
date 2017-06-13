@@ -1,0 +1,29 @@
+Javascript Scope Exercises
+1. Determine what this Javascript code will print out (without running it):
+x = 1;
+var a = 5;
+var b = 10;
+var c = function(a, b, c) {
+var x = 10;
+document.write(x);
+document.write(a);
+var f = function(a, b, c) {
+b = a;
+document.write(b);
+b = c;
+var x = 5;
+}
+f(a,b,c);
+document.write(b);
+ }
+c(8,9,10);
+document.write(b);
+document.write(x);
+}
+2. What is the difference between a method and function?
+3. What does 'this' refer to when used in a Java method?
+4. What does 'this' refer to when used in a JavaScript method?
+5. What does 'this' refer to when used in a JavaScript function?
+6. What is a free variable in JavaScript?
+7. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.

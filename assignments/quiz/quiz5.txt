@@ -1,0 +1,38 @@
+1. What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+- 
+setTimeout(booyah, 2000); This assigns the callable function to the timeout function
+setTimeout(booyah(), 2000); This assigns non-callable output of the function to the timeout function.
+
+
+2. What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3));
+
+--- alert(x) - alerts 6;
+--- alert(y(2,3)); alerts 6
+
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+says "BOOYAH!"
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+
+---
+var booyah1=function(){
+    alert("BOOYAH!");
+}
+
+var booyah2=function(){
+ return booyah1;
+}   
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+Onobstrusive Javascript is a best practices to implement javascript in a page. This means the webpage should be accessible even if the browser does not support javascript. This means separting javascript event bindins from the html to js only. 
+The practical application is that, the presentation layer or the html can be rendered in any devices even if the device or browser does not support js without any error. or even if the js is not loaded the page will function properly without any syntactic error.
